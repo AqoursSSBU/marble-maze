@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-    public Transform playerTrans;
+    Transform playerTrans;
     Vector3 offSet;
 
     void Start() {
@@ -12,7 +12,7 @@ public class Camera : MonoBehaviour
         offSet = transform.position -playerTrans.position;
     }
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.position = playerTrans.position + offSet;
     }
