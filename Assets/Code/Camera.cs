@@ -9,7 +9,7 @@ public class Camera : MonoBehaviour
     Vector3 eulerAngles;
     float turnSpeed = 45;
     float x = 0,y = 0,z = 0;
-
+    
     void Start() {
         playerTrans = GameObject.FindGameObjectWithTag("Player").transform;
         offSet = transform.position - playerTrans.position;

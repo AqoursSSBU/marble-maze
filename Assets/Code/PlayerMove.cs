@@ -43,9 +43,7 @@ public class PlayerMove : MonoBehaviour
         
         _rigidbody.AddForce(xspeed*forward);
         _rigidbody.AddForce(zspeed*right);
-        print(Vector3.RotateTowards(new Vector3(xspeed,0,zspeed),camtrans.forward,8,8));
-        print(xspeed);
-        print(zspeed);
+
         if(transform.position.y < death){
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
