@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Audio : MonoBehaviour
 {
-    // found the code for keeping audio going here https://answers.unity.com/questions/783631/keep-audio-playing-even-though-i-reset-the-scene.html
+    
     public static Audio instance = null;
     static string currentScene = "Level 1"; 
     string prevScene;
@@ -13,8 +13,7 @@ public class Audio : MonoBehaviour
 
     void Awake()
     {
-        print(currentScene);
-        print(SceneManager.GetActiveScene().name);
+        // found the code for keeping audio going here https://answers.unity.com/questions/783631/keep-audio-playing-even-though-i-reset-the-scene.html
         if (instance != null && instance != this)
         {
             if(SceneManager.GetActiveScene().name == currentScene){
@@ -28,9 +27,6 @@ public class Audio : MonoBehaviour
             GameObject.DontDestroyOnLoad(gameObject);
             print("hi");
         }
-
-        
-        
         currentScene = SceneManager.GetActiveScene().name;
         prevScene = currentScene;
         
