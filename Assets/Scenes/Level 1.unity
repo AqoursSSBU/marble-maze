@@ -614,7 +614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314122314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.66, y: 0.69, z: -4.96}
+  m_LocalPosition: {x: -2.66, y: 0.69, z: -4.53}
   m_LocalScale: {x: 3, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -739,7 +739,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-89600
+  m_Name: pb_Mesh-120916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5893,7 +5893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762170466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2700002, y: 0.69, z: -4.96}
+  m_LocalPosition: {x: 2.2700002, y: 0.69, z: -4.53}
   m_LocalScale: {x: 3, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7194,7 +7194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481012859}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -2.66, y: 0.69000006, z: -5.031}
+  m_LocalPosition: {x: -2.66, y: 0.69000006, z: -4.6010003}
   m_LocalScale: {x: 2.4, y: 1.6, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8305,7 +8305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020726155}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 2.27, y: 0.69000006, z: -5.031}
+  m_LocalPosition: {x: 2.27, y: 0.69000006, z: -4.6010003}
   m_LocalScale: {x: 2.4, y: 1.6, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8473,6 +8473,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3397191601501297897, guid: 62aa1711fc77bb041a69276a97f7cea7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 156958db26d0ca048981879bd4a21f26, type: 2}
     - target: {fileID: 3397191601501297899, guid: 62aa1711fc77bb041a69276a97f7cea7, type: 3}
       propertyPath: m_RootOrder
       value: 3
