@@ -13,13 +13,18 @@ public class Audio : MonoBehaviour
 
     void Awake()
     {
+        print(instance != null);
+        print(instance != this);
+        print("supposed");
+        
+        print(currentScene);
         // found the code for keeping audio going here https://answers.unity.com/questions/783631/keep-audio-playing-even-though-i-reset-the-scene.html
-        if (instance != null && instance != this)
+        if (instance != null && instance != this && SceneManager.GetActiveScene().name == currentScene)
         {
-            if(SceneManager.GetActiveScene().name == currentScene){
-                Destroy(gameObject);
-                print("lol");
-            }
+          
+            Destroy(gameObject);
+            print("lol");
+        
         }
         else
         {
@@ -36,7 +41,6 @@ public class Audio : MonoBehaviour
 
         if(prevScene != currentScene){
             print("whoops");
-            instance = null;
             Destroy(gameObject);        
         }
         

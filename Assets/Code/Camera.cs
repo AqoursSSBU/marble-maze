@@ -19,10 +19,10 @@ public class Camera : MonoBehaviour
     {
         
         if(Input.GetKey(KeyCode.W)){
-            x-=1;
+            x+=1;
         }
         if(Input.GetKey(KeyCode.S)){
-            x+=1;
+            x-=1;
         }
         if(Input.GetKey(KeyCode.A)){
             y-=1;
